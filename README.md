@@ -43,11 +43,10 @@ Open and run "TBD.exe".
 TBD uses simple mouse and keyboard controls.  
   
 ### Keyboard  
-TBD
+TBD  
   
 ### Mouse  
-- Movement: Look around
-- Left Click: Grapple
+TBD  
   
   
 ## Issues  
