@@ -30,7 +30,7 @@ public class PlayerScript : MonoBehaviour
         {
             fHorizontalMovement = fHorizontalMovement * fSprintMultiplier;
         }
-        if (Input.GetKeyDown("space") && bIsGrounded)
+        if (Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.W) && bIsGrounded)
         {
             Debug.Log("Space pressed");
             fCurrentJump = fJumpPower;
