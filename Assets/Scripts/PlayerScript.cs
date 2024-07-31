@@ -8,6 +8,7 @@ public class PlayerScript : MonoBehaviour
     float fSprintMultiplier = 2.0f;
     public float fJumpPower = 15f;
     public Rigidbody2D rb;
+    private SpriteRenderer LookDir;
     float fHorizontalMovement;
     float fCurrentJump;
 
@@ -18,7 +19,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        LookDir = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -40,6 +41,16 @@ public class PlayerScript : MonoBehaviour
             fCurrentJump = 0;
         }
         rb.velocity = new Vector2(fHorizontalMovement * fMoveSpeed, rb.velocity.y + fCurrentJump);
+
+        // Look direction
+        if (rb.velocity.x < 0)
+        {
+            LookDir.flipX = true;
+        }
+        else if (rb.velocity.x > 0)
+        {
+            LookDir.flipX = false;
+        }
     }
 
 }
