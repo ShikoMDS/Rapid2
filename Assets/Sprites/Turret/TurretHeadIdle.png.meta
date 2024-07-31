@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b67c19fb5c1135843916bbaafef77947
+guid: 97e1b48eee348ec499e2318a77f94de9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TurretIdle_0
+      name: TurretHeadIdle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 306a98d384f76784995611759b2d3142
-      internalID: -928125621
+      spriteID: 3bec8edd3b812a0428af7a85be27a72f
+      internalID: 873216949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_1
+      name: TurretHeadIdle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d752067c8ad228d449f6ae0d7c6ff709
-      internalID: -1372943918
+      spriteID: 80c70b022c00e6f428c5e710742d0b40
+      internalID: -1056724249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_2
+      name: TurretHeadIdle_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2e2261a1ad104646aa12c0fbc2f5175
-      internalID: -1460747834
+      spriteID: e86a7b6b04b51a84db2bbcda207ac5cd
+      internalID: 1207612389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_3
+      name: TurretHeadIdle_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b25df9c4f729ac24cbc05e1a9c92de3a
-      internalID: -1103396107
+      spriteID: c9e3de768d1734244866fb61cc184f20
+      internalID: -2009733012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_4
+      name: TurretHeadIdle_4
       rect:
         serializedVersion: 2
         x: 128
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4edc01485672b604197667d4d548f902
-      internalID: 47222113
+      spriteID: 5481675db392b164587194a3303efe8e
+      internalID: 425621384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_5
+      name: TurretHeadIdle_5
       rect:
         serializedVersion: 2
         x: 160
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a02d61161975fb4f8a606feb1d45b04
-      internalID: -607353490
+      spriteID: ab8c1a082bca52941934b50f626048c8
+      internalID: -1637194309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_6
+      name: TurretHeadIdle_6
       rect:
         serializedVersion: 2
         x: 192
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 588fa599c0ec22146b834bb7d1128071
-      internalID: -605104690
+      spriteID: e5cbe71bbfb5e2d4ebfa79633be02c66
+      internalID: 630271432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_7
+      name: TurretHeadIdle_7
       rect:
         serializedVersion: 2
         x: 224
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d955dc0038615564abb6e5d1865a9610
-      internalID: 1867529984
+      spriteID: c34e2906e14645548868067727ef836e
+      internalID: -714946680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_8
+      name: TurretHeadIdle_8
       rect:
         serializedVersion: 2
         x: 256
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e45dc5ab54a6e747aefa30844ff942e
-      internalID: 545994310
+      spriteID: b74916b123f577849b5e4a4b316cf2a7
+      internalID: -1743056701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TurretIdle_9
+      name: TurretHeadIdle_9
       rect:
         serializedVersion: 2
         x: 288
@@ -313,8 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4d286f6d8ebbb24d878d22564e8510a
-      internalID: -1126513514
+      spriteID: 924a6aa4c00fa494681f42db05519b0d
+      internalID: -1070433737
       vertices: []
       indices: 
       edges: []
@@ -330,16 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TurretIdle_0: -928125621
-      TurretIdle_1: -1372943918
-      TurretIdle_2: -1460747834
-      TurretIdle_3: -1103396107
-      TurretIdle_4: 47222113
-      TurretIdle_5: -607353490
-      TurretIdle_6: -605104690
-      TurretIdle_7: 1867529984
-      TurretIdle_8: 545994310
-      TurretIdle_9: -1126513514
+      TurretHeadIdle_0: 873216949
+      TurretHeadIdle_1: -1056724249
+      TurretHeadIdle_2: 1207612389
+      TurretHeadIdle_3: -2009733012
+      TurretHeadIdle_4: 425621384
+      TurretHeadIdle_5: -1637194309
+      TurretHeadIdle_6: 630271432
+      TurretHeadIdle_7: -714946680
+      TurretHeadIdle_8: -1743056701
+      TurretHeadIdle_9: -1070433737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
