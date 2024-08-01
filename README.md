@@ -23,7 +23,7 @@ TBD is a game prototype created in response to the prompt "Hotline".
 
 ## Features  
 Hotline.  
-   
+    
   
 ## Requirements  
 - Windows 10/11 x64
