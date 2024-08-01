@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f768340a9a1a05741a879eaf75e766e2
+guid: 957c9fe55cb87394bad48f7e7776551a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,127 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LaserRed_0
+      name: Player_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc686f5e1756174a914105173553e2d
-      internalID: 828124864
+      spriteID: c3ef3b5db33c3a24bb653f8ad2b1da41
+      internalID: 1282310173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LaserRed_1
+      name: Player_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 383b78fe29aa86646a85da52900f7ec8
-      internalID: -802837598
+      spriteID: 7bda26e03c592ed4fbf765dc1464f3b2
+      internalID: -354104022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LaserRed_2
+      name: Player_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5ccb826f896d6b4ab8129b0f7760466
-      internalID: -1188371811
+      spriteID: 2f0e472f197931348a9d812632b1b8ff
+      internalID: -678359960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LaserRed_3
+      name: Player_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0a18049599204b4c82d61674cdd73b4
-      internalID: -731131295
+      spriteID: ba122bff3dceb35438f4f14ae53bc135
+      internalID: 2118145757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LaserRed_4
+      name: Player_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfe739bdbc08b7749be4eea450261074
-      internalID: 1435985714
+      spriteID: 658bec6dff8e1834b8078d6d79204efc
+      internalID: 1162399353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LaserRed_5
+      name: Player_5
       rect:
         serializedVersion: 2
         x: 160
         y: 0
         width: 32
-        height: 32
-      alignment: 4
-      pivot: {x: 0, y: 0.5}
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bccbf2ab440183d449924c02d659aaa5
-      internalID: 1440448690
+      spriteID: ab4bd214ca055714bbbe2b8511a74fb7
+      internalID: 1976510792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d57c9be4e3270f418b0defafb56e08b
+      internalID: -783851234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096f3242db5076746814f544fca8328c
+      internalID: 567152524
       vertices: []
       indices: 
       edges: []
@@ -246,12 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      LaserRed_0: 828124864
-      LaserRed_1: -802837598
-      LaserRed_2: -1188371811
-      LaserRed_3: -731131295
-      LaserRed_4: 1435985714
-      LaserRed_5: 1440448690
+      Player_0: 1282310173
+      Player_1: -354104022
+      Player_2: -678359960
+      Player_3: 2118145757
+      Player_4: 1162399353
+      Player_5: 1976510792
+      Player_6: -783851234
+      Player_7: 567152524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
