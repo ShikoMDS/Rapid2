@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlipPlatformCollisions : MonoBehaviour
 {
     private PlatformEffector2D effector;
-    public float wait_time;
+    private float wait_time = 0.5f;
 
     // Start is called before the first frame update
     void Start()

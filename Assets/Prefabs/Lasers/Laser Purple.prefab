@@ -45,12 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db1062b02cb5124cabf53a8c2a4d5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
   line_renderer: {fileID: 7342131689547329245}
   fire_point: {fileID: 4146949832688409683}
   m_layers_to_hit:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 1216
 --- !u!1 &8184870098669023073
 GameObject:
   m_ObjectHideFlags: 0
