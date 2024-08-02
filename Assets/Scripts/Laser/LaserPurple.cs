@@ -37,18 +37,6 @@ public class LaserPurple : MonoBehaviour
 
         transform.localScale = new Vector3(hit.distance, transform.localScale.y, 1);
 
-        RaycastHit2D smoke_hit = Physics2D.Raycast(transform.position, direction, m_max_distance, m_smoke_layer);
-
-        if (smoke_hit.collider == null)
-        {
-            m_render.color = m_transparent_color;
-            return;
-        }
-
-        m_render.color = m_purple_color;
-
-
-
         //Debug.Log(hit.collider.gameObject.name);
 
         //if (hit.collider.tag == "Player")
