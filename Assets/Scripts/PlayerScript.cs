@@ -33,7 +33,6 @@ public class PlayerScript : MonoBehaviour
         }
         if (Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.W) && bIsGrounded)
         {
-            Debug.Log("Space pressed");
             fCurrentJump = fJumpPower;
         }
         else

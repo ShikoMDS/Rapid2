@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    public Camera camera;
     public LineRenderer line_renderer;
     public Transform fire_point;
 
