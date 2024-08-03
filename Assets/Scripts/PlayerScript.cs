@@ -11,7 +11,7 @@ public class PlayerScript : MonoBehaviour
     private SpriteRenderer LookDir;
     float fHorizontalMovement;
     float fCurrentJump;
-
+    public int iPoints = 0;
     public Transform GroundCheck;
     public LayerMask GroundLayer;
     bool bIsGrounded;
@@ -25,13 +25,13 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bIsGrounded = Physics2D.OverlapCapsule(GroundCheck.position, new Vector2(1.0f, 0.2f), CapsuleDirection2D.Horizontal, 0, GroundLayer);
+        bIsGrounded = Physics2D.OverlapCapsule(GroundCheck.position, new Vector2(0.8f, 0.4f), CapsuleDirection2D.Horizontal, 0, GroundLayer);
         fHorizontalMovement = Input.GetAxisRaw("Horizontal");
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
             fHorizontalMovement = fHorizontalMovement * fSprintMultiplier;
         }
-        if (Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.W) && bIsGrounded)
+        if ((Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.W)) && bIsGrounded)
         {
             fCurrentJump = fJumpPower;
         }

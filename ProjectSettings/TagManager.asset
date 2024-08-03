@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Smoke
   - Enemy
+  - Collectable
   layers:
   - Default
   - TransparentFX
