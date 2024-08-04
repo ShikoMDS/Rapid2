@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 534292869917179162}
   - component: {fileID: 8671752067363385331}
   m_Layer: 0
-  m_Name: LongButton
+  m_Name: ShortButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 128, y: 32}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1417326410047013426
 CanvasRenderer:
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2099740914, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
+  m_Sprite: {fileID: 1218704880, guid: acaaa10560f972e419470914bf00672f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -107,8 +107,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: -1521942660, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
-    m_PressedSprite: {fileID: -339378045, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
+    m_HighlightedSprite: {fileID: -389183975, guid: acaaa10560f972e419470914bf00672f, type: 3}
+    m_PressedSprite: {fileID: -543709737, guid: acaaa10560f972e419470914bf00672f, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -135,11 +135,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonImage: {fileID: 1022725959970934625}
-  defaultSprite: {fileID: 2099740914, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
-  hoverSprite: {fileID: -1521942660, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
-  pressedSprite: {fileID: -339378045, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
+  defaultSprite: {fileID: 1218704880, guid: acaaa10560f972e419470914bf00672f, type: 3}
+  hoverSprite: {fileID: -389183975, guid: acaaa10560f972e419470914bf00672f, type: 3}
+  pressedSprite: {fileID: -543709737, guid: acaaa10560f972e419470914bf00672f, type: 3}
   buttonText: {fileID: 7081733466232568572}
-  textMoveOffset: {x: 0, y: -6, z: 0}
+  textMoveOffset: {x: 0, y: -18, z: 0}
 --- !u!1 &5496145821454373483
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,8 +174,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 4}
-  m_SizeDelta: {x: 128, y: 24}
+  m_AnchoredPosition: {x: 0, y: 15}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4469686627063354287
 CanvasRenderer:
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
