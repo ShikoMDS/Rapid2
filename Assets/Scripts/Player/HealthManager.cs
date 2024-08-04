@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     public int health = 3;
-    public int num_of_hearts;
+    public int num_of_hearts = 3;
 
     public Image[] hearts;
     public Sprite full_heart;
     public Sprite empty_heart;
+
+    public bool can_take_damage = true;
 
     // Start is called before the first frame update
     void Start()
@@ -50,5 +52,20 @@ public class HealthManager : MonoBehaviour
 
 
         }
+    }
+
+    public void LaserDamage()
+    {
+        if (can_take_damage)
+        {
+            can_take_damage = false;
+            health--;
+            Invoke("CanTakeDamage", 2);
+        }
+    }
+
+    void CanTakeDamage()
+    {
+        can_take_damage = true;
     }
 }
