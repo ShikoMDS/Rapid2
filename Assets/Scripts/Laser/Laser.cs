@@ -4,17 +4,31 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    public LineRenderer line_renderer;
-    public Transform fire_point;
+    public LineRenderer m_line_renderer;
+    public Transform m_fire_point;
 
     public LayerMask m_layers_to_hit;
 
     private float m_max_distance = 200.0f;
 
+    public bool m_can_damage;
+
+    public string m_type;
+
+    private bool m_turret_shooting = false;
+    private bool m_turret_detecting = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        EnableLaser();
+        if (m_type == "Turret" || m_type == "Detect")
+        {
+            DisableLaser();
+        }
+        else
+        {
+            EnableLaser();
+        }
     }
 
     // Update is called once per frame
@@ -33,25 +47,73 @@ public class Laser : MonoBehaviour
 
         transform.localScale = new Vector3(hit.distance, transform.localScale.y, 1);
 
+        if (m_type == "Detect" && !m_turret_detecting)
+        {
+            DisableLaser();
+        }
+
         // Hit player
         if (hit.collider.tag == "Player")
         {
-            //Debug.Log("Hit Player");
+            if (m_type == "Red" || m_type == "Purple" || m_type == "Green" || m_type == "Turret")
+            {
+                if (m_can_damage)
+                {
+                    HealthManager player_health = hit.collider.gameObject.GetComponent<HealthManager>();
+                    player_health.LaserDamage();
+                }
+            }
 
-            HealthManager player_health = hit.collider.gameObject.GetComponent<HealthManager>();
-            player_health.LaserDamage();
+            if (m_type == "Detect")
+            {
+                EnableDetectLaser();
+            }
 
+            if (m_type == "Turret")
+            {
+                if (!m_turret_shooting)
+                {
+                    Invoke("EnableTurret", 2);
+                }
+            }
         }
     }
 
     void EnableLaser()
     {
-        line_renderer.enabled = true;
+        m_line_renderer.enabled = true;
     }
 
     void DisableLaser()
     {
-        line_renderer.enabled = false;
+        m_line_renderer.enabled = false;
+    }
 
+    void EnableDetectLaser()
+    {
+        EnableLaser();
+        m_turret_detecting = true;
+        Invoke("DisableDetectLaser", 2);
+    }
+
+    void DisableDetectLaser()
+    {
+        DisableLaser();
+        m_turret_detecting = false;
+    }
+
+    void EnableTurret()
+    {
+        EnableLaser();
+        m_turret_shooting = true;
+        m_can_damage = true;
+        Invoke("DisbaleTurret", 5);
+    }
+
+    void DisbaleTurret()
+    {
+        DisableLaser();
+        m_turret_shooting = false;
+        m_can_damage = false;
     }
 }

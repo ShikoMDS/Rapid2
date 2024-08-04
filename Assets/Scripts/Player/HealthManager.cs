@@ -5,67 +5,57 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public int health = 3;
-    public int num_of_hearts = 3;
+    public int m_health = 3;
+    public int m_num_of_hearts = 3;
 
-    public Image[] hearts;
-    public Sprite full_heart;
-    public Sprite empty_heart;
+    public Image[] m_hearts;
+    public Sprite m_full_heart;
+    public Sprite m_empty_heart;
 
-    public bool can_take_damage = true;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool m_can_take_damage = true;
 
     // Update is called once per frame
     void Update()
     {
-        if (health > num_of_hearts)
+        if (m_health > m_num_of_hearts)
         {
-            health = num_of_hearts;
+            m_health = m_num_of_hearts;
         }
 
-
-        for (int i = 0; i < hearts.Length; i++)
+        for (int i = 0; i < m_hearts.Length; i++)
         {
-            if (i < health)
+            if (i < m_health)
             {
-                hearts[i].sprite = full_heart;
+                m_hearts[i].sprite = m_full_heart;
             }
             else
             {
-                hearts[i].sprite = empty_heart;
+                m_hearts[i].sprite = m_empty_heart;
             }
 
-
-            if (i < num_of_hearts)
+            if (i < m_num_of_hearts)
             {
-                hearts[i].enabled = true;
+                m_hearts[i].enabled = true;
             }
             else
             {
-                hearts[i].enabled = false;
+                m_hearts[i].enabled = false;
             }
-
-
         }
     }
 
     public void LaserDamage()
     {
-        if (can_take_damage)
+        if (m_can_take_damage)
         {
-            can_take_damage = false;
-            health--;
+            m_can_take_damage = false;
+            m_health--;
             Invoke("CanTakeDamage", 2);
         }
     }
 
     void CanTakeDamage()
     {
-        can_take_damage = true;
+        m_can_take_damage = true;
     }
 }

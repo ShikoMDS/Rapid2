@@ -139,6 +139,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8942011028053248284}
     m_Modifications:
+    - target: {fileID: 2300704086761991866, guid: 5493ec58caa5cdc49a31b4ab5b0b052d, type: 3}
+      propertyPath: m_type
+      value: Purple
+      objectReference: {fileID: 0}
     - target: {fileID: 4182734115244000535, guid: 5493ec58caa5cdc49a31b4ab5b0b052d, type: 3}
       propertyPath: m_Name
       value: Laser Purple

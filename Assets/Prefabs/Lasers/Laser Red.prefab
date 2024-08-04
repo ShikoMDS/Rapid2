@@ -181,11 +181,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db1062b02cb5124cabf53a8c2a4d5ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  line_renderer: {fileID: 3561440990583199423}
-  fire_point: {fileID: 781849250431114012}
+  m_line_renderer: {fileID: 3561440990583199423}
+  m_fire_point: {fileID: 781849250431114012}
   m_layers_to_hit:
     serializedVersion: 2
     m_Bits: 1216
+  m_can_damage: 1
+  m_type: Red
 --- !u!1 &5834903720861835854
 GameObject:
   m_ObjectHideFlags: 0

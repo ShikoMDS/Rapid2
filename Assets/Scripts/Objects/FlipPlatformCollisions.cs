@@ -4,40 +4,39 @@ using UnityEngine;
 
 public class FlipPlatformCollisions : MonoBehaviour
 {
-    private PlatformEffector2D effector;
-    private float wait_time = 0.5f;
+    private PlatformEffector2D m_effector;
+    private float m_wait_time = 0.2f;
+    private bool m_flipped = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        effector = GetComponent<PlatformEffector2D>();
+        m_effector = GetComponent<PlatformEffector2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
-        {
-            effector.rotationalOffset = 180.0f;
-            wait_time = 0.5f;
-        }
-
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            if (wait_time <= 0.0f)
+            if (m_flipped == false)
             {
-                effector.rotationalOffset = 180.0f;
-                wait_time = 0.5f;
-            }
-            else
-            {
-                wait_time -= Time.deltaTime;
+                m_effector.rotationalOffset = 180.0f;
+                m_flipped = true;
+                Invoke("FlipBack", m_wait_time);
             }
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W))
         {
-            effector.rotationalOffset = 0.0f;
+            m_effector.rotationalOffset = 0.0f;
+            m_flipped = false;
         }
+    }
+
+    void FlipBack()
+    {
+        m_effector.rotationalOffset = 0.0f;
+        m_flipped = false;
     }
 }
