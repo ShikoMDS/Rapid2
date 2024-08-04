@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LaserGreenMaterial
+  m_Name: LaserDetectMaterial
   m_Shader: {fileID: -6465566751694194690, guid: ab2ff9e504a70e548b3dc35083b4258f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -42,7 +42,7 @@ Material:
     - _LaserEdgeSmoothness: 100
     - _LaserThickness: 100
     m_Colors:
-    - _Color: {r: 0, g: 1, b: 0, a: 0.3921569}
+    - _Color: {r: 0, g: 0.34345746, b: 1, a: 0.3921569}
     - _LaserSpeed: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4269263092879489893

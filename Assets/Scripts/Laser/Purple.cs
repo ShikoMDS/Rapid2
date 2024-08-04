@@ -4,25 +4,19 @@ using UnityEngine;
 
 public class Purple : MonoBehaviour
 {
-    public GameObject smoke_screen;
-    public Renderer self;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    public GameObject m_smoke_screen;
+    public Renderer m_self;
 
     // Update is called once per frame
     void Update()
     {
-        if (smoke_screen.activeInHierarchy)
+        if (m_smoke_screen.activeInHierarchy)
         {
-            self.enabled = true;
+            m_self.enabled = true;
         }
         else
         {
-            self.enabled = false;
+            m_self.enabled = false;
         }
     }
 }
