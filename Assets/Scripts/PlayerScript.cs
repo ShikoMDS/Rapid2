@@ -16,10 +16,16 @@ public class PlayerScript : MonoBehaviour
     public LayerMask GroundLayer;
     bool bIsGrounded;
 
+    public GameObject smoke_screen;
+    public int smoke_bombs_count = 3;
+    private int remaining_smoke_bombs;
+    private bool can_smoke = true;
+
     // Start is called before the first frame update
     void Start()
     {
         LookDir = gameObject.GetComponent<SpriteRenderer>();
+        remaining_smoke_bombs = smoke_bombs_count;
     }
 
     // Update is called once per frame
@@ -50,6 +56,31 @@ public class PlayerScript : MonoBehaviour
         {
             LookDir.flipX = false;
         }
+
+        // Smoke
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (remaining_smoke_bombs > 0)
+            {
+                if (can_smoke == true)
+                {
+                    ActivateSmoke();
+                }
+            }
+        }
     }
 
+    void ActivateSmoke()
+    {
+        can_smoke = false;
+        smoke_screen.SetActive(true);
+        remaining_smoke_bombs--;
+        Invoke("DeactivateSmoke", 5);
+    }
+
+    void DeactivateSmoke()
+    {
+        smoke_screen.SetActive(false);
+        can_smoke = true;
+    }
 }

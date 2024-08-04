@@ -32,6 +32,16 @@ public class Laser : MonoBehaviour
         }
 
         transform.localScale = new Vector3(hit.distance, transform.localScale.y, 1);
+
+        // Hit player
+        if (hit.collider.tag == "Player")
+        {
+            //Debug.Log("Hit Player");
+
+            HealthManager player_health = hit.collider.gameObject.GetComponent<HealthManager>();
+            player_health.LaserDamage();
+
+        }
     }
 
     void EnableLaser()

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 597392921539360092}
   - component: {fileID: 3561440990583199423}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,13 +73,13 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 1, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 769581060333139973}
   - component: {fileID: 4596273831792016284}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Laser Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 781849250431114012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Start Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4592416407454011026}
   - component: {fileID: 8866084785662009012}
   - component: {fileID: 7732926620871043111}
+  - component: {fileID: 2636226198045037967}
   m_Layer: 6
   m_Name: Player Prefab
   m_TagString: Player
@@ -104,10 +105,13 @@ MonoBehaviour:
   fMoveSpeed: 5
   fJumpPower: 15
   rb: {fileID: 7732926620871043111}
+  iPoints: 0
   GroundCheck: {fileID: 6815003930071341289}
   GroundLayer:
     serializedVersion: 2
     m_Bits: 128
+  smoke_screen: {fileID: 0}
+  smoke_bombs_count: 3
 --- !u!95 &4592416407454011026
 Animator:
   serializedVersion: 5
@@ -180,7 +184,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 4
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 14d27b2aed9527e4ba32fe1a11ac091f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -191,6 +195,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &2636226198045037967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5765414485371096765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d941d7a2dfd4b4db91bef2fdb515dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  num_of_hearts: 0
+  hearts: []
+  full_heart: {fileID: 21300000, guid: 3cff99f6f9f815441818e94dd07fd74b, type: 3}
+  empty_heart: {fileID: 21300000, guid: 2c674626dd9756f46a37a3aee035f3dd, type: 3}
+  can_take_damage: 1
 --- !u!1 &6857600433017885834
 GameObject:
   m_ObjectHideFlags: 0

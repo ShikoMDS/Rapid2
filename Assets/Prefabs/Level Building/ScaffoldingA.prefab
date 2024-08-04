@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3124791065630563284}
   - component: {fileID: 2977593495859662264}
   - component: {fileID: 1355523399391762471}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ScaffoldingA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506cb23782f18314fb678ea343acc21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wait_time: 0.5
 --- !u!1 &2113611119386825546
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9039205060108657635}
   - component: {fileID: 8547946918075490739}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5830732173686947878}
   - component: {fileID: 8095379927048815107}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6930934565555965147}
   - component: {fileID: 2861934986788852101}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5181105541420095938}
   - component: {fileID: 4128973400873801998}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,7 +555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6670810052338865614}
   - component: {fileID: 1021958869766582861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,7 +639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350571337169300609}
   - component: {fileID: 8358635739432345533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -724,7 +723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3056472155791917178}
   - component: {fileID: 2087479932303500463}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
