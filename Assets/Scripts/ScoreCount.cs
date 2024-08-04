@@ -18,6 +18,6 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         iScore = pPlayer.iPoints;
-        tScoreText.text = "Score: " + iScore.ToString();
+        tScoreText.text = "$: " + iScore.ToString();
     }
 }
