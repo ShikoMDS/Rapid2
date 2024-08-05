@@ -64,7 +64,7 @@ public class HealthManager : MonoBehaviour
     {
        if (m_health <= 0)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0); //Currently moves to main menu NEEDS TO BE CHANGED TO LOSE SCRENE
+            UnityEngine.SceneManagement.SceneManager.LoadScene(3); //Currently moves to main menu NEEDS TO BE CHANGED TO LOSE SCRENE
         }
     }
 }
