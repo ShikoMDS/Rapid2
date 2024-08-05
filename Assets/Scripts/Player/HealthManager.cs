@@ -42,6 +42,7 @@ public class HealthManager : MonoBehaviour
                 m_hearts[i].enabled = false;
             }
         }
+        CheckDeath();
     }
 
     public void LaserDamage()
@@ -57,5 +58,13 @@ public class HealthManager : MonoBehaviour
     void CanTakeDamage()
     {
         m_can_take_damage = true;
+    }
+
+    void CheckDeath()
+    {
+       if (m_health <= 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0); //Currently moves to main menu NEEDS TO BE CHANGED TO LOSE SCRENE
+        }
     }
 }

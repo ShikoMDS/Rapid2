@@ -6,15 +6,15 @@ public class CollectableController : MonoBehaviour
 {
     PlayerScript pPlayer;
     public int iRewardedPoints = 1; 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player" && Input.GetKey(KeyCode.E))
         {
             Destroy(gameObject);
             pPlayer.iPoints += iRewardedPoints;
         }
     }
-
+    
     private void Start()
     {
         pPlayer = FindAnyObjectByType<PlayerScript>();
