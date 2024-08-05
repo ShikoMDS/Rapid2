@@ -14053,6 +14053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallLaserRed
       objectReference: {fileID: 0}
+    - target: {fileID: 8903255649369565794, guid: 07e2b00d04fa7584f8b0d8e0802b2dd2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8942011028053248284, guid: 07e2b00d04fa7584f8b0d8e0802b2dd2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6
@@ -19691,7 +19695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8942011028053248284, guid: 4390d3c3964ac8f4aa2234b692d0cbb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -3.411
       objectReference: {fileID: 0}
     - target: {fileID: 8942011028053248284, guid: 4390d3c3964ac8f4aa2234b692d0cbb0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33139,7 +33143,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5039111913709304659, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7102461500788056329, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
       propertyPath: m_Name
