@@ -18,12 +18,16 @@ public class Laser : MonoBehaviour
     private bool m_turret_shooting = false;
     private bool m_turret_detecting = false;
 
+    public GameObject m_sparks;
+    private Renderer m_sparks_renderer;
+
     // Start is called before the first frame update
     void Start()
     {
         if (m_type == "Turret" || m_type == "Detect")
         {
-            DisableLaser();
+            m_sparks_renderer = m_sparks.GetComponent<Renderer>();
+            DisbaleTurret();
         }
         else
         {
@@ -46,6 +50,9 @@ public class Laser : MonoBehaviour
         }
 
         transform.localScale = new Vector3(hit.distance, transform.localScale.y, 1);
+
+        // Spark position
+        m_sparks.transform.position = hit.point;
 
         if (m_type == "Detect" && !m_turret_detecting)
         {
@@ -105,6 +112,7 @@ public class Laser : MonoBehaviour
     void EnableTurret()
     {
         EnableLaser();
+        m_sparks_renderer.enabled = true;
         m_turret_shooting = true;
         m_can_damage = true;
         Invoke("DisbaleTurret", 5);
@@ -113,6 +121,7 @@ public class Laser : MonoBehaviour
     void DisbaleTurret()
     {
         DisableLaser();
+        m_sparks_renderer.enabled = false;
         m_turret_shooting = false;
         m_can_damage = false;
     }
