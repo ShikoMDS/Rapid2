@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5765414485371096765}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.92, y: -3.41, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -176,10 +176,13 @@ MonoBehaviour:
   fMoveSpeed: 5
   fJumpPower: 15
   rb: {fileID: 8228533442238676767}
+  iPoints: 0
   GroundCheck: {fileID: 6815003930071341289}
   GroundLayer:
     serializedVersion: 2
     m_Bits: 128
+  smoke_screen: {fileID: 0}
+  smoke_bombs_count: 3
 --- !u!95 &4592416407454011026
 Animator:
   serializedVersion: 5

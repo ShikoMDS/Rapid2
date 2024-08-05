@@ -5,27 +5,30 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public float fMoveSpeed = 5f;
-    float fSprintMultiplier = 2.0f;
+    private float fSprintMultiplier = 2.0f;
     public float fJumpPower = 15f;
     public Rigidbody2D rb;
     private SpriteRenderer LookDir;
-    float fHorizontalMovement;
-    float fCurrentJump;
+    private float fHorizontalMovement;
+    private float fCurrentJump;
     public int iPoints = 0;
     public Transform GroundCheck;
     public LayerMask GroundLayer;
-    bool bIsGrounded;
+    private bool bIsGrounded;
 
     public GameObject smoke_screen;
     public int smoke_bombs_count = 3;
     private int remaining_smoke_bombs;
     private bool can_smoke = true;
 
+    private Animator animator; // Animator component reference
+
     // Start is called before the first frame update
     void Start()
     {
         LookDir = gameObject.GetComponent<SpriteRenderer>();
         remaining_smoke_bombs = smoke_bombs_count;
+        animator = gameObject.GetComponent<Animator>(); // Get Animator component
     }
 
     // Update is called once per frame
@@ -33,11 +36,15 @@ public class PlayerScript : MonoBehaviour
     {
         bIsGrounded = Physics2D.OverlapCapsule(GroundCheck.position, new Vector2(0.8f, 0.4f), CapsuleDirection2D.Horizontal, 0, GroundLayer);
         fHorizontalMovement = Input.GetAxisRaw("Horizontal");
+        float speed = Mathf.Abs(fHorizontalMovement);
+
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
-            fHorizontalMovement = fHorizontalMovement * fSprintMultiplier;
+            fHorizontalMovement *= fSprintMultiplier;
         }
-        if ((Input.GetKeyDown("space") || Input.GetKeyDown(KeyCode.W)) && bIsGrounded)
+
+        // Changed jump to only use spacebar
+        if (Input.GetKeyDown(KeyCode.Space) && bIsGrounded)
         {
             fCurrentJump = fJumpPower;
         }
@@ -45,6 +52,7 @@ public class PlayerScript : MonoBehaviour
         {
             fCurrentJump = 0;
         }
+
         rb.velocity = new Vector2(fHorizontalMovement * fMoveSpeed, rb.velocity.y + fCurrentJump);
 
         // Look direction
@@ -67,6 +75,16 @@ public class PlayerScript : MonoBehaviour
                     ActivateSmoke();
                 }
             }
+        }
+
+        // Update animator parameters
+        animator.SetFloat("Speed", speed);
+        animator.SetBool("IsJumping", !bIsGrounded);
+
+        // Ensure proper transition from walk to jump
+        if (bIsGrounded && fCurrentJump > 0)
+        {
+            animator.SetTrigger("PlayerJump");
         }
     }
 

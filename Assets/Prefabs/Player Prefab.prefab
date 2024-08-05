@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 1563317561, guid: cc0bed15fd9b3a74c857ece39ded4fc5, type: 3}
+  m_Sprite: {fileID: -499019649, guid: 268665d3373e1ea45aff596b471bd207, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -207,12 +207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d941d7a2dfd4b4db91bef2fdb515dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  num_of_hearts: 0
-  hearts: []
-  full_heart: {fileID: 21300000, guid: 3cff99f6f9f815441818e94dd07fd74b, type: 3}
-  empty_heart: {fileID: 21300000, guid: 2c674626dd9756f46a37a3aee035f3dd, type: 3}
-  can_take_damage: 1
+  m_health: 3
+  m_num_of_hearts: 3
+  m_hearts: []
+  m_full_heart: {fileID: 0}
+  m_empty_heart: {fileID: 0}
+  m_can_take_damage: 1
 --- !u!1 &6857600433017885834
 GameObject:
   m_ObjectHideFlags: 0

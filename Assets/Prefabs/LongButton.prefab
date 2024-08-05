@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 128, y: 32}
+  m_SizeDelta: {x: 640, y: 96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1417326410047013426
 CanvasRenderer:
@@ -139,7 +139,7 @@ MonoBehaviour:
   hoverSprite: {fileID: -1521942660, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
   pressedSprite: {fileID: -339378045, guid: 9054d6578cbc7fc49ba936a4ce047c05, type: 3}
   buttonText: {fileID: 7081733466232568572}
-  textMoveOffset: {x: 0, y: -6, z: 0}
+  textMoveOffset: {x: 0, y: -16, z: 0}
 --- !u!1 &5496145821454373483
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,8 +174,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 4}
-  m_SizeDelta: {x: 128, y: 24}
+  m_AnchoredPosition: {x: 0, y: 12}
+  m_SizeDelta: {x: 640, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4469686627063354287
 CanvasRenderer:
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
