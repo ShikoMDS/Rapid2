@@ -10,6 +10,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Scene2");
     }
 
+    public void PlayCutscene()
+    {
+        SceneManager.LoadScene("CutScene");
+    }
+
     public void Controls()
     {
         SceneManager.LoadScene("Controls");

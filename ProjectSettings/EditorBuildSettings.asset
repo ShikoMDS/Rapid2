@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Controls.unity
     guid: b155c19c5c83ac849baba2076da04574
   - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: ffaa913ad9412fc4faee44e4b4aa8249
+  - enabled: 1
+    path: Assets/Scenes/YouLoose.unity
+    guid: c41e5be8b6be4e949a9e313378d6981f
+  - enabled: 1
+    path: Assets/Scenes/YouWin.unity
+    guid: fb93fdb0c89a47a4593f2f81481efb82
+  - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: ba3f776aab18a5f4da9c264f2da445d2
   m_configObjects: {}
