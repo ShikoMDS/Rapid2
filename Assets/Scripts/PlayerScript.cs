@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -16,10 +17,14 @@ public class PlayerScript : MonoBehaviour
     public LayerMask GroundLayer;
     private bool bIsGrounded;
 
+    // Smoke
     public GameObject smoke_screen;
     public int smoke_bombs_count = 3;
     private int remaining_smoke_bombs;
     private bool can_smoke = true;
+    public Image[] m_smoke_images;
+    public Sprite m_full_smoke;
+    public Sprite m_empty_smoke;
 
     private Animator animator; // Animator component reference
 
@@ -76,6 +81,36 @@ public class PlayerScript : MonoBehaviour
                 }
             }
         }
+
+        ////////////
+
+        if (remaining_smoke_bombs > smoke_bombs_count)
+        {
+            remaining_smoke_bombs = smoke_bombs_count;
+        }
+
+        for (int i = 0; i < m_smoke_images.Length; i++)
+        {
+            if (i < remaining_smoke_bombs)
+            {
+                m_smoke_images[i].sprite = m_full_smoke;
+            }
+            else
+            {
+                m_smoke_images[i].sprite = m_empty_smoke;
+            }
+
+            if (i < smoke_bombs_count)
+            {
+                m_smoke_images[i].enabled = true;
+            }
+            else
+            {
+                m_smoke_images[i].enabled = false;
+            }
+        }
+
+        ///////////
 
         // Update animator parameters
         animator.SetFloat("Speed", speed);
