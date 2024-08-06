@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1.0f;
         // Ensure all panels and buttons are disabled at the start
         winScreen.SetActive(false);
         loseScreen.SetActive(false);
@@ -59,7 +60,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f; // Pause the game
     }
 
-        public void LoseGame()
+    public void LoseGame()
     {
         loseScreen.SetActive(true);
         retryButton.SetActive(true);
