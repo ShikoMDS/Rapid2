@@ -5,60 +5,50 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     public float moveSpeed = 3f;
-    public Transform groundCheck;
-    public LayerMask groundLayer;
     public Transform[] patrolPoints;
     private int currentPoint = 0;
 
     private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
-    private bool isGrounded;
+    private bool isAtPoint = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
         if (patrolPoints.Length > 0)
         {
             transform.position = patrolPoints[currentPoint].position;
         }
+        Debug.Log("Start position set to patrol point " + currentPoint);
     }
 
     void Update()
     {
-        // Ground check
-        isGrounded = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.0f, 0.2f), CapsuleDirection2D.Horizontal, 0, groundLayer);
-
-        if (isGrounded)
-        {
-            Patrol();
-        }
-
-        // Flip sprite based on movement direction
-        if (rb.velocity.x < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if (rb.velocity.x > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
+        Patrol();
     }
 
     void Patrol()
     {
         if (patrolPoints.Length == 0) return;
 
-        // Move towards the current patrol point
-        Vector2 targetPosition = patrolPoints[currentPoint].position;
-        Vector2 newPosition = Vector2.MoveTowards(rb.position, targetPosition, moveSpeed * Time.deltaTime);
-        rb.MovePosition(newPosition);
-
-        // Check if the enemy has reached the patrol point
-        if (Vector2.Distance(rb.position, targetPosition) < 0.2f)
+        if (!isAtPoint)
         {
+            MoveToNextPoint();
+        }
+    }
+
+    void MoveToNextPoint()
+    {
+        Vector2 targetPosition = patrolPoints[currentPoint].position;
+        rb.MovePosition(Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime));
+
+        Debug.Log("Moving towards point " + currentPoint + " at position " + targetPosition);
+
+        if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
+        {
+            isAtPoint = true;
+            Debug.Log("Reached point " + currentPoint);
             currentPoint = (currentPoint + 1) % patrolPoints.Length;
+            isAtPoint = false;
         }
     }
 }

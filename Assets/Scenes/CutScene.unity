@@ -249,6 +249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843531694}
   - component: {fileID: 843531693}
+  - component: {fileID: 843531695}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -307,6 +308,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &843531695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843531692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b42966e6525f24487147a9c1e9841a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 843531693}
 --- !u!1001 &1005340058
 PrefabInstance:
   m_ObjectHideFlags: 0
