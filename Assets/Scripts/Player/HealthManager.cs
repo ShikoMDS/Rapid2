@@ -14,6 +14,19 @@ public class HealthManager : MonoBehaviour
 
     public bool m_can_take_damage = true;
 
+    private GameManager gameManager;
+
+    void Start()
+    {
+        // Find the GameManager in the scene
+        gameManager = FindObjectOfType<GameManager>();
+
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene.");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -62,9 +75,21 @@ public class HealthManager : MonoBehaviour
 
     void CheckDeath()
     {
-       if (m_health <= 0)
+        if (m_health <= 0)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(3); //Currently moves to main menu NEEDS TO BE CHANGED TO LOSE SCRENE
+            gameManager.LoseGame();
+            
+            /*
+            if (gameManager != null)
+            {
+                gameManager.LoseGame();
+            }
+            else
+            {
+                // Fallback if GameManager is not found
+                UnityEngine.SceneManagement.SceneManager.LoadScene(3); // Change to appropriate scene index for lose screen
+            }
+            */
         }
     }
 }
