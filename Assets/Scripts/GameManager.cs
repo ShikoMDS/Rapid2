@@ -44,10 +44,18 @@ public class GameManager : MonoBehaviour
         menuButton.SetActive(true);
         quitButton.SetActive(true);
 
-        // Check for last level in build
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        // Get current scene index and name
+        Scene currentScene = SceneManager.GetActiveScene();
+        int currentSceneIndex = currentScene.buildIndex;
+        string currentSceneName = currentScene.name;
 
-        if (currentSceneIndex >= SceneManager.sceneCountInBuildSettings - 1)
+        // Check if this is the "TutorialScene"
+        if (currentSceneName == "TutorialScene")
+        {
+            // Hide functionality for tutorial specific conditions
+            nextLevelButton.SetActive(false); 
+        }
+        else if (currentSceneIndex >= SceneManager.sceneCountInBuildSettings - 1)
         {
             // Do not display next level button for final level
             nextLevelButton.SetActive(false);
