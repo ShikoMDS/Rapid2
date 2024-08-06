@@ -16,6 +16,8 @@ public class HealthManager : MonoBehaviour
 
     private GameManager gameManager;
 
+    public Renderer player_renderer;
+
     void Start()
     {
         // Find the GameManager in the scene
@@ -65,7 +67,19 @@ public class HealthManager : MonoBehaviour
             m_can_take_damage = false;
             m_health--;
             Invoke("CanTakeDamage", 2);
+            ShowRed();
         }
+    }
+
+    void ShowRed()
+    {
+        player_renderer.material.color = Color.red;
+        Invoke("ShowNormal", 0.2f);
+    }
+
+    void ShowNormal()
+    {
+        player_renderer.material.color = Color.white;
     }
 
     void CanTakeDamage()
