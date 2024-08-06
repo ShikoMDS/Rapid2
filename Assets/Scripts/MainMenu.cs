@@ -15,6 +15,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("CutScene");
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
+
     public void Controls()
     {
         SceneManager.LoadScene("Controls");
