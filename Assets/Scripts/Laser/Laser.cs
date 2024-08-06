@@ -21,6 +21,8 @@ public class Laser : MonoBehaviour
     public GameObject m_sparks;
     private Renderer m_sparks_renderer;
 
+    //[SerializeField] private AudioClip laser_sound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,8 @@ public class Laser : MonoBehaviour
         {
             EnableLaser();
         }
+
+        //SoundFXManager.instance.PlayDamageSound();
     }
 
     // Update is called once per frame
