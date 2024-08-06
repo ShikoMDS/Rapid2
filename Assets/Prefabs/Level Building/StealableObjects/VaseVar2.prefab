@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4758081926484104769}
   - component: {fileID: 4516724302395781871}
   - component: {fileID: 2250996558569193287}
+  - component: {fileID: 632980514669234043}
   m_Layer: 0
   m_Name: VaseVar2
   m_TagString: Collectable
@@ -144,3 +145,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iRewardedPoints: 60
+--- !u!50 &632980514669234043
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783800285007334473}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 7

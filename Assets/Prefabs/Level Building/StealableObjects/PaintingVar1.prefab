@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4899859332303406576}
   - component: {fileID: 7069081377967841939}
   - component: {fileID: 6471347319854351293}
+  - component: {fileID: 8790461695752213471}
   m_Layer: 0
   m_Name: PaintingVar1
   m_TagString: Collectable
@@ -93,6 +94,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iRewardedPoints: 200
+--- !u!50 &8790461695752213471
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443776964969948800}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6204420161824120348
 GameObject:
   m_ObjectHideFlags: 0

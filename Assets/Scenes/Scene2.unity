@@ -35151,6 +35151,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 735053611}
     m_Modifications:
+    - target: {fileID: 5446366993961094348, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5446366993961094348, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7293219854045536583, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
@@ -35198,6 +35206,22 @@ PrefabInstance:
     - target: {fileID: 7647187333276028076, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277302160391653419, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277302160391653419, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277302160391653419, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277302160391653419, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 576
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
