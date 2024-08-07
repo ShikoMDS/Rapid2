@@ -74,7 +74,13 @@ public class HealthManager : MonoBehaviour
     void ShowRed()
     {
         player_renderer.material.color = Color.red;
-        Invoke("ShowNormal", 0.2f);
+        Invoke("ShowYellow", 1);
+    }
+
+    void ShowYellow()
+    {
+        player_renderer.material.color = Color.yellow;
+        Invoke("ShowNormal", 1);
     }
 
     void ShowNormal()
