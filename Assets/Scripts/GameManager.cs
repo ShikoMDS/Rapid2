@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
         retryButton.SetActive(true);
         menuButton.SetActive(true);
         quitButton.SetActive(true);
+        aAudio.EndLevelSounds();
         Time.timeScale = 0f; // Pause the game
     }
 
@@ -91,6 +92,7 @@ public class GameManager : MonoBehaviour
             retryButton.SetActive(true);
             menuButton.SetActive(true);
             quitButton.SetActive(true);
+            aAudio.EndLevelSounds();
             Time.timeScale = 0f; // Pause the game
         }
         else
