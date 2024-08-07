@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c98922f159622247a1b0ceaffe81690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  iRewardedPoints: 15
+  iRewardedPoints: 400
   m_text: {fileID: 6110050037651964079}
 --- !u!61 &-1837740127331059327
 BoxCollider2D:

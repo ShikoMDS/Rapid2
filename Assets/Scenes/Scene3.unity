@@ -10941,7 +10941,7 @@ PrefabInstance:
     - target: {fileID: 7706342708938185130, guid: ba9c6f971d765ee46a61b47c4cb0a3c8, type: 3}
       propertyPath: cinemachineCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 758761801}
     - target: {fileID: 7867110461082428695, guid: ba9c6f971d765ee46a61b47c4cb0a3c8, type: 3}
       propertyPath: m_Size.x
       value: 4.7196584
@@ -13718,6 +13718,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 575745c3b558d4840933bca06dfcec6f, type: 3}
+--- !u!114 &758761801 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7831826566310129952, guid: 575745c3b558d4840933bca06dfcec6f, type: 3}
+  m_PrefabInstance: {fileID: 758761800}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &760856370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15112,6 +15123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7195322159926113523, guid: ecbf48250c4fa014c9fff9466d4f913a, type: 3}
+      propertyPath: LaserFire
+      value: 
+      objectReference: {fileID: 8300000, guid: 8666f1a19a35c724c81e4a88b1d1a852, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15194,7 +15209,7 @@ PrefabInstance:
     - target: {fileID: 7706342708938185130, guid: ba9c6f971d765ee46a61b47c4cb0a3c8, type: 3}
       propertyPath: cinemachineCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 758761801}
     - target: {fileID: 7867110461082428695, guid: ba9c6f971d765ee46a61b47c4cb0a3c8, type: 3}
       propertyPath: m_Size.x
       value: 4.7196584
@@ -21452,7 +21467,7 @@ PrefabInstance:
     - target: {fileID: 7706342708938185130, guid: ba9c6f971d765ee46a61b47c4cb0a3c8, type: 3}
       propertyPath: cinemachineCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 758761801}
     - target: {fileID: 7867110461082428695, guid: ba9c6f971d765ee46a61b47c4cb0a3c8, type: 3}
       propertyPath: m_Size.x
       value: 4.7196584

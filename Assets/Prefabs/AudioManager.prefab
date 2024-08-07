@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.197
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   BGM: {fileID: 8300000, guid: e13d2b7db708d874c810e802accc5e5e, type: 3}
   CollectObject: {fileID: 8300000, guid: 618b1f713651db34bacbd6425567079a, type: 3}
   TakeDamage: {fileID: 8300000, guid: f85966fc1c911a645a35a01c91b677f1, type: 3}
-  LaserFire: {fileID: 8300000, guid: a8da70678801ba744883dde7899bede6, type: 3}
+  LaserFire: {fileID: 8300000, guid: 8666f1a19a35c724c81e4a88b1d1a852, type: 3}
   SmokeSound: {fileID: 8300000, guid: ae4d8cde740a3ba4ab29cada95bb8e6b, type: 3}
   WarningBeep: {fileID: 8300000, guid: e5c233d0b230f964090940a64cd9c14c, type: 3}
 --- !u!1 &7466499460932309849
@@ -226,7 +226,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.578
   m_Pitch: 1
   Loop: 0
   Mute: 0
