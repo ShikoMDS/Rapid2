@@ -24100,6 +24100,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
   m_PrefabInstance: {fileID: 1319267131}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1321577831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 31.218082
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.537766
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192227144970803472, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: sTextSprite
+      value: 
+      objectReference: {fileID: 1582852972}
+    - target: {fileID: 8192227144970803472, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: tTutorialText
+      value: 
+      objectReference: {fileID: 1711945445}
+    - target: {fileID: 8192227144970803472, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: sTextToDisplay
+      value: '"Oh? A seemingly unprotected corridor. This might be where a hidden
+        PURPLE laser could be located. Press Q to use a smoke bomb, it will reveal
+        any purple lasers. You have a limited supply, so be careful"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8365129731013688288, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_Name
+      value: Sign_01 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
 --- !u!1 &1336225609
 GameObject:
   m_ObjectHideFlags: 0
@@ -26656,7 +26727,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4902591141043664458, guid: 7f7b48cbfcc4f9644b5e7184d82da90f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 67.525
+      value: 66.5
       objectReference: {fileID: 0}
     - target: {fileID: 4902591141043664458, guid: 7f7b48cbfcc4f9644b5e7184d82da90f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31607,7 +31678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8942011028053248284, guid: 4390d3c3964ac8f4aa2234b692d0cbb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.25
+      value: 36.506
       objectReference: {fileID: 0}
     - target: {fileID: 8942011028053248284, guid: 4390d3c3964ac8f4aa2234b692d0cbb0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -31978,6 +32049,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7293219854045536583, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
   m_PrefabInstance: {fileID: 1757130177}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1760355714
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 56.698513
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5357057
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750811988306312481, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192227144970803472, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: sTextSprite
+      value: 
+      objectReference: {fileID: 1582852972}
+    - target: {fileID: 8192227144970803472, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: tTutorialText
+      value: 
+      objectReference: {fileID: 1711945445}
+    - target: {fileID: 8192227144970803472, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: sTextToDisplay
+      value: '"Be careful, there could be a TURRET ahead. Turrets will fire at you
+        a short time after seeing you, you will have a few seconds to get away before
+        they''re fully charged"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8365129731013688288, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
+      propertyPath: m_Name
+      value: Sign_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
 --- !u!1001 &1760625125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33395,6 +33537,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 480adcb7fd615a44a94cc2223d32e7bf, type: 3}
+--- !u!1001 &1844566339
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7102461500788056329, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_Name
+      value: BlockA (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.000996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.467963
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440133457719726184, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ac02a0be79f3cc4c9c75fe88d761835, type: 3}
 --- !u!1001 &1845160292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37046,7 +37245,8 @@ PrefabInstance:
       value: "\u201CThere are collectables scattered throughout the level which gives
         you money when collecting them. Some of the objects you can steal are the
         PAINTINGS, VASES, DISPLAY CABINETS and more. Each have different monetary
-        values, try to make as much money as possible before finishing the level.\u201D"
+        values, try to make as much money as possible before finishing the level.
+        Press E to pick them up\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 8365129731013688288, guid: 34a3b5f524a127d4b970cb333ccdaa1a, type: 3}
       propertyPath: m_Name
@@ -39186,3 +39386,6 @@ SceneRoots:
   - {fileID: 1514988374}
   - {fileID: 734158500}
   - {fileID: 1283197743}
+  - {fileID: 1844566339}
+  - {fileID: 1760355714}
+  - {fileID: 1321577831}
