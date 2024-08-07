@@ -3314,7 +3314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &136372903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23318,7 +23318,7 @@ MonoBehaviour:
   winScreen: {fileID: 1921125273}
   loseScreen: {fileID: 1431335349}
   pauseScreen: {fileID: 1336595102}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1488380577}
   nextLevelButton: {fileID: 270047058}
   resumeButton: {fileID: 1346300285}
   retryButton: {fileID: 1360101152}
@@ -31079,7 +31079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8273318672721283422, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9117277721597828631, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -31094,6 +31094,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+--- !u!1 &1488380577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3468950200327109798, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+  m_PrefabInstance: {fileID: 1488380576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1489307767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7669557808201409323, guid: 6b4cb3b8b63616941a65bd8de823e735, type: 3}
@@ -31909,6 +31914,10 @@ PrefabInstance:
     - target: {fileID: 7302098538756921743, guid: af8e5e1f7db3f524190f40b03a26f6ae, type: 3}
       propertyPath: m_Name
       value: PaintingVar4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748862226578156488, guid: af8e5e1f7db3f524190f40b03a26f6ae, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37888,6 +37897,10 @@ PrefabInstance:
     - target: {fileID: 7302098538756921743, guid: af8e5e1f7db3f524190f40b03a26f6ae, type: 3}
       propertyPath: m_Name
       value: PaintingVar4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748862226578156488, guid: af8e5e1f7db3f524190f40b03a26f6ae, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
