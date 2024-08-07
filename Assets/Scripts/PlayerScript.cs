@@ -115,12 +115,6 @@ public class PlayerScript : MonoBehaviour
         // Update animator parameters
         animator.SetFloat("Speed", speed);
         animator.SetBool("IsJumping", !bIsGrounded);
-
-        // Ensure proper transition from walk to jump
-        if (bIsGrounded && fCurrentJump > 0)
-        {
-            animator.SetTrigger("PlayerJump");
-        }
     }
 
     void ActivateSmoke()
