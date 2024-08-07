@@ -4885,7 +4885,6 @@ MonoBehaviour:
   m_can_damage: 1
   m_type: 
   m_sparks: {fileID: 3090054840776111705}
-  laser_sound: {fileID: 8300000, guid: a8da70678801ba744883dde7899bede6, type: 3}
 --- !u!114 &8778216675636302297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5012,7 +5011,7 @@ LineRenderer:
   - {x: 1, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:

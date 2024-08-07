@@ -1,6 +1,5 @@
 using UnityEngine;
 using Cinemachine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class CameraAdjust : MonoBehaviour
@@ -13,7 +12,11 @@ public class CameraAdjust : MonoBehaviour
     private float originalYOffset;
     private CinemachineCameraOffset cameraOffset;
     private List<CameraAdjust> activeTriggers = new List<CameraAdjust>();
-    private Coroutine currentTransitionCoroutine;
+    private bool isTransitioning = false;
+    private float targetYOffset;
+    private float transitionStartTime;
+    private float currentYOffset;
+    private float transitionDuration;
 
     void Start()
     {
@@ -27,6 +30,8 @@ public class CameraAdjust : MonoBehaviour
         if (cameraOffset != null)
         {
             originalYOffset = cameraOffset.m_Offset.y;
+            currentYOffset = originalYOffset;
+            targetYOffset = originalYOffset;
             Debug.Log("Original Y Offset: " + originalYOffset);
         }
         else
@@ -84,31 +89,27 @@ public class CameraAdjust : MonoBehaviour
 
     void StartTransition(float newYOffset, float duration)
     {
-        if (currentTransitionCoroutine != null)
-        {
-            StopCoroutine(currentTransitionCoroutine);
-        }
-        currentTransitionCoroutine = StartCoroutine(SmoothTransition(newYOffset, duration));
+        targetYOffset = newYOffset;
+        transitionStartTime = Time.time;
+        transitionDuration = duration;
+        isTransitioning = true;
     }
 
-    IEnumerator SmoothTransition(float newYOffset, float duration)
+    void Update()
     {
-        float startYOffset = cameraOffset.m_Offset.y;
-        float elapsedTime = 0f;
-
-        Debug.Log($"Starting transition to {newYOffset} over {duration} seconds");
-
-        while (elapsedTime < duration)
+        if (isTransitioning)
         {
-            elapsedTime += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsedTime / duration);
-            float yOffset = Mathf.Lerp(startYOffset, newYOffset, t);
+            float elapsedTime = Time.time - transitionStartTime;
+            float t = Mathf.Clamp01(elapsedTime / transitionDuration);
+            currentYOffset = Mathf.Lerp(currentYOffset, targetYOffset, t);
             Vector3 currentOffset = cameraOffset.m_Offset;
-            cameraOffset.m_Offset = new Vector3(currentOffset.x, yOffset, currentOffset.z);
-            yield return null;
-        }
+            cameraOffset.m_Offset = new Vector3(currentOffset.x, currentYOffset, currentOffset.z);
 
-        cameraOffset.m_Offset = new Vector3(cameraOffset.m_Offset.x, newYOffset, cameraOffset.m_Offset.z);
-        Debug.Log($"Transition complete. New Y Offset: {newYOffset}");
+            if (t >= 1f)
+            {
+                isTransitioning = false;
+                Debug.Log($"Transition complete. New Y Offset: {targetYOffset}");
+            }
+        }
     }
 }
