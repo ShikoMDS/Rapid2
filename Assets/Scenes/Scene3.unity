@@ -10854,6 +10854,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1026864900}
     m_Modifications:
+    - target: {fileID: -1062540231089600569, guid: b59c69ea57e392d418c3f3f2aa24e622, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c9f37095167f5bb489051a3062c7dd89, type: 2}
     - target: {fileID: 999130568918066688, guid: b59c69ea57e392d418c3f3f2aa24e622, type: 3}
       propertyPath: m_Name
       value: WardrobeA (4)
@@ -23940,6 +23944,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1026864900}
     m_Modifications:
+    - target: {fileID: -1062540231089600569, guid: b59c69ea57e392d418c3f3f2aa24e622, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c9f37095167f5bb489051a3062c7dd89, type: 2}
     - target: {fileID: 999130568918066688, guid: b59c69ea57e392d418c3f3f2aa24e622, type: 3}
       propertyPath: m_Name
       value: WardrobeA (3)
