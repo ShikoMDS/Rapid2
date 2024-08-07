@@ -23318,6 +23318,7 @@ MonoBehaviour:
   winScreen: {fileID: 1921125273}
   loseScreen: {fileID: 1431335349}
   pauseScreen: {fileID: 1336595102}
+  scoreText: {fileID: 1488380577}
   nextLevelButton: {fileID: 270047058}
   resumeButton: {fileID: 1346300285}
   retryButton: {fileID: 1360101152}
@@ -30932,6 +30933,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 136372907}
     m_Modifications:
+    - target: {fileID: 645573002103048236, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 828533675046611307, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -30939,6 +30944,10 @@ PrefabInstance:
     - target: {fileID: 828533675046611307, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RetryGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839870130978785599, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2197732640629694144, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_Pivot.x
@@ -31040,6 +31049,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitGame
       objectReference: {fileID: 0}
+    - target: {fileID: 2487074196871806271, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468950200327109798, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5611142807780304242, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -31047,6 +31064,18 @@ PrefabInstance:
     - target: {fileID: 5611142807780304242, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644359858306073653, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280798312858650023, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6932935056379513677, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7186821925898807818, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -31061,6 +31090,14 @@ PrefabInstance:
       value: MenuUI
       objectReference: {fileID: 0}
     - target: {fileID: 8273318672721283422, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010876077611859792, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057880220630694756, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -31077,6 +31114,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+--- !u!1 &1488380577 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3468950200327109798, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+  m_PrefabInstance: {fileID: 1488380576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1489307767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7669557808201409323, guid: 6b4cb3b8b63616941a65bd8de823e735, type: 3}

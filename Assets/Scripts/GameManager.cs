@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
+        isPaused = true;
         winScreen.SetActive(true);
         scoreText.SetActive(true);
         retryButton.SetActive(true);
@@ -84,6 +85,7 @@ public class GameManager : MonoBehaviour
 
     public void LoseGame()
     {
+        isPaused = true;
         loseScreen.SetActive(true);
         scoreText.SetActive(true);
         retryButton.SetActive(true);
