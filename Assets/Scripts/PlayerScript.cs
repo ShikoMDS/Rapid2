@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour
     public Transform GroundCheck;
     public LayerMask GroundLayer;
     private bool bIsGrounded;
-
+    AudioController aAudio;
     // Smoke
     public GameObject smoke_screen;
     public int smoke_bombs_count = 3;
@@ -34,6 +34,7 @@ public class PlayerScript : MonoBehaviour
         LookDir = gameObject.GetComponent<SpriteRenderer>();
         remaining_smoke_bombs = smoke_bombs_count;
         animator = gameObject.GetComponent<Animator>(); // Get Animator component
+        aAudio = FindAnyObjectByType<AudioController>();
     }
 
     // Update is called once per frame
@@ -119,6 +120,7 @@ public class PlayerScript : MonoBehaviour
 
     void ActivateSmoke()
     {
+        aAudio.PlaySound(aAudio.SmokeSound);
         can_smoke = false;
         smoke_screen.SetActive(true);
         remaining_smoke_bombs--;

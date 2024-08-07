@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectableController : MonoBehaviour
 {
     PlayerScript pPlayer;
+    AudioController aAudio;
     public int iRewardedPoints = 1;
     public GameObject m_text;
 
@@ -18,6 +19,7 @@ public class CollectableController : MonoBehaviour
         if (collision.tag == "Player" && Input.GetKey(KeyCode.E))
         {
             Destroy(gameObject);
+            aAudio.PlaySound(aAudio.CollectObject);
             pPlayer.iPoints += iRewardedPoints;
         }
     }
@@ -33,6 +35,7 @@ public class CollectableController : MonoBehaviour
     private void Start()
     {
         pPlayer = FindAnyObjectByType<PlayerScript>();
+        aAudio = FindAnyObjectByType<AudioController>();
         m_text.SetActive(false);
     }
 }

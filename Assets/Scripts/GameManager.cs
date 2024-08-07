@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject retryButton;
     public GameObject menuButton;
     public GameObject quitButton;
+    AudioController aAudio;
 
     private bool isPaused = false;
 
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
         retryButton.SetActive(false);
         menuButton.SetActive(false);
         quitButton.SetActive(false);
+        aAudio = FindAnyObjectByType<AudioController>();
     }
 
     void Update()
@@ -43,7 +45,7 @@ public class GameManager : MonoBehaviour
         retryButton.SetActive(true);
         menuButton.SetActive(true);
         quitButton.SetActive(true);
-
+        aAudio.EndLevelSounds();
         // Get current scene index and name
         Scene currentScene = SceneManager.GetActiveScene();
         int currentSceneIndex = currentScene.buildIndex;
