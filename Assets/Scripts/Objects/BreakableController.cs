@@ -7,7 +7,7 @@ public class BreakableController : MonoBehaviour
     PlayerScript pPlayer;
     public int iRewardedPoints = 1;
     bool bIsBroken = false;
-
+    AudioController aAudio;
     public GameObject m_text;
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -21,6 +21,7 @@ public class BreakableController : MonoBehaviour
         {
             bIsBroken = true;
             pPlayer.iPoints += iRewardedPoints;
+            aAudio.PlaySound(aAudio.CollectObject);
             m_text.SetActive(false);
         }
     }
@@ -36,6 +37,7 @@ public class BreakableController : MonoBehaviour
     private void Start()
     {
         pPlayer = FindAnyObjectByType<PlayerScript>();
+        aAudio = FindAnyObjectByType<AudioController>();
         m_text.SetActive(false);
     }
 }

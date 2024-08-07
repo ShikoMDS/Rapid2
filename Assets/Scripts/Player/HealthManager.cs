@@ -7,7 +7,7 @@ public class HealthManager : MonoBehaviour
 {
     public int m_health = 3;
     public int m_num_of_hearts = 3;
-
+    AudioController aAudio;
     public Image[] m_hearts;
     public Sprite m_full_heart;
     public Sprite m_empty_heart;
@@ -22,7 +22,7 @@ public class HealthManager : MonoBehaviour
     {
         // Find the GameManager in the scene
         gameManager = FindObjectOfType<GameManager>();
-
+        aAudio = FindAnyObjectByType<AudioController>();
         if (gameManager == null)
         {
             Debug.LogError("GameManager not found in the scene.");
@@ -65,6 +65,7 @@ public class HealthManager : MonoBehaviour
         if (m_can_take_damage)
         {
             m_can_take_damage = false;
+            aAudio.PlaySound(aAudio.TakeDamage);
             m_health--;
             Invoke("CanTakeDamage", 2);
             ShowRed();

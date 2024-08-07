@@ -19,6 +19,7 @@ public class Laser : MonoBehaviour
     private bool m_turret_detecting = false;
 
     public GameObject m_sparks;
+    AudioController aAudio;
     private Renderer m_sparks_renderer;
 
     //[SerializeField] private AudioClip laser_sound;
@@ -35,7 +36,7 @@ public class Laser : MonoBehaviour
         {
             EnableLaser();
         }
-
+        aAudio = FindAnyObjectByType<AudioController>();
         //SoundFXManager.instance.PlayDamageSound();
     }
 
@@ -92,6 +93,7 @@ public class Laser : MonoBehaviour
 
     void EnableLaser()
     {
+        
         m_line_renderer.enabled = true;
     }
 
@@ -103,6 +105,10 @@ public class Laser : MonoBehaviour
     void EnableDetectLaser()
     {
         EnableLaser();
+        if (aAudio.SFXSource.isPlaying == false)
+        {
+            aAudio.PlaySound(aAudio.WarningBeep);
+        }
         m_turret_detecting = true;
         Invoke("DisableDetectLaser", 2);
     }
@@ -115,6 +121,10 @@ public class Laser : MonoBehaviour
 
     void EnableTurret()
     {
+        if (aAudio.SFXSource.isPlaying == false)
+        {
+            aAudio.PlaySound(aAudio.LaserFire);
+        }
         EnableLaser();
         m_sparks_renderer.enabled = true;
         m_turret_shooting = true;
