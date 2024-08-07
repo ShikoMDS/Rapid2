@@ -1931,6 +1931,7 @@ MonoBehaviour:
   winScreen: {fileID: 201264819}
   loseScreen: {fileID: 333500550}
   pauseScreen: {fileID: 1528101248}
+  scoreText: {fileID: 1637802714}
   nextLevelButton: {fileID: 2025727057}
   resumeButton: {fileID: 1363539815}
   retryButton: {fileID: 4231347}
@@ -29228,6 +29229,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636922585}
   m_CullTransparentMesh: 1
+--- !u!1 &1637802714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3468950200327109798, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+  m_PrefabInstance: {fileID: 3806232517080609271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1639460598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39881,11 +39887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2197732640629694144, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2197732640629694144, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.87
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2197732640629694144, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
