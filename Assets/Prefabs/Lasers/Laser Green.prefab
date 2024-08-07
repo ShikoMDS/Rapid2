@@ -4916,7 +4916,6 @@ MonoBehaviour:
   m_can_damage: 1
   m_type: Green
   m_sparks: {fileID: 2242051276866469720}
-  laser_sound: {fileID: 8300000, guid: a8da70678801ba744883dde7899bede6, type: 3}
 --- !u!1 &5549070932958974799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,7 +4995,7 @@ LineRenderer:
   - {x: 1, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.1
+    widthMultiplier: 0.2
     widthCurve:
       serializedVersion: 2
       m_Curve:
