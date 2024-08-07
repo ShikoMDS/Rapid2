@@ -38088,6 +38088,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5689979509590180228, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7293219854045536583, guid: b37ca562bd0134e4f8040cdf42bf5bd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5
