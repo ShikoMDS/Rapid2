@@ -42,7 +42,7 @@ Material:
     - _LaserEdgeSmoothness: 100
     - _LaserThickness: 100
     m_Colors:
-    - _Color: {r: 31.999996, g: 0, b: 28.886593, a: 0.39215687}
+    - _Color: {r: 4, g: 2.808536, b: 0, a: 0.39215687}
     - _LaserSpeed: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4269263092879489893
