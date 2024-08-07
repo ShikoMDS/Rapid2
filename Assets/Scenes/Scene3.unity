@@ -9069,6 +9069,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7669557808201409323, guid: 6b4cb3b8b63616941a65bd8de823e735, type: 3}
   m_PrefabInstance: {fileID: 491987877}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &496735844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3468950200327109798, guid: 4b1eb30c22563814da25dd1cd9d6fed7, type: 3}
+  m_PrefabInstance: {fileID: 1488380576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &504467657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18033,6 +18038,7 @@ MonoBehaviour:
   winScreen: {fileID: 1921125273}
   loseScreen: {fileID: 1431335349}
   pauseScreen: {fileID: 1336595102}
+  scoreText: {fileID: 496735844}
   nextLevelButton: {fileID: 270047058}
   resumeButton: {fileID: 1346300285}
   retryButton: {fileID: 1360101152}

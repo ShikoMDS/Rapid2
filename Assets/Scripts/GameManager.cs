@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject winScreen;
     public GameObject loseScreen;
     public GameObject pauseScreen;
+    public GameObject scoreText;
     public GameObject nextLevelButton;
     public GameObject resumeButton;
     public GameObject retryButton;
@@ -24,7 +25,9 @@ public class GameManager : MonoBehaviour
         winScreen.SetActive(false);
         loseScreen.SetActive(false);
         pauseScreen.SetActive(false);
+        scoreText.SetActive(false);
         nextLevelButton.SetActive(false);
+        resumeButton.SetActive(false);
         retryButton.SetActive(false);
         menuButton.SetActive(false);
         quitButton.SetActive(false);
@@ -35,13 +38,22 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TogglePause();
+            if (winScreen.activeSelf || loseScreen.activeSelf)
+            {
+                // If win or lose screen is active, go back to menu
+                GoToMenu();
+            }
+            else
+            {
+                TogglePause();
+            }
         }
     }
 
     public void WinGame()
     {
         winScreen.SetActive(true);
+        scoreText.SetActive(true);
         retryButton.SetActive(true);
         menuButton.SetActive(true);
         quitButton.SetActive(true);
@@ -55,7 +67,7 @@ public class GameManager : MonoBehaviour
         if (currentSceneName == "TutorialScene")
         {
             // Hide functionality for tutorial specific conditions
-            nextLevelButton.SetActive(false); 
+            nextLevelButton.SetActive(false);
         }
         else if (currentSceneIndex >= SceneManager.sceneCountInBuildSettings - 1)
         {
@@ -73,6 +85,7 @@ public class GameManager : MonoBehaviour
     public void LoseGame()
     {
         loseScreen.SetActive(true);
+        scoreText.SetActive(true);
         retryButton.SetActive(true);
         menuButton.SetActive(true);
         quitButton.SetActive(true);
@@ -135,11 +148,11 @@ public class GameManager : MonoBehaviour
 
     public void QuitGame()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#else
         Application.Quit();
-        #endif
+#endif
     }
 
     public void RetryGame()
