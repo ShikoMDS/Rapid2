@@ -15110,7 +15110,7 @@ PrefabInstance:
     - target: {fileID: 7195322159926113523, guid: ecbf48250c4fa014c9fff9466d4f913a, type: 3}
       propertyPath: LaserFire
       value: 
-      objectReference: {fileID: 8300000, guid: a0d15d7f7f186e54a9ec9b2f8c1fb6d7, type: 3}
+      objectReference: {fileID: 8300000, guid: 8666f1a19a35c724c81e4a88b1d1a852, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
